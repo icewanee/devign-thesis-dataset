@@ -31,7 +31,7 @@
   },
   "create": {
     "filter_column_value": { "project": "" },
-    "slice_size": 2000,
+    "slice_size": 1000,
     "joern_cli_dir": "joern/joern-cli/"
   },
   "paths": {

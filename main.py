@@ -30,7 +30,7 @@ def select(dataset):
     result = dataset
     len_filter = result.func.str.len() < 100000
     result = result.loc[len_filter]
-    result = result.head(4000)
+    result = result.head(3000)
     return result
 
 
