@@ -6,7 +6,8 @@ The original paper did not provide enough information about the versions so I ha
 
 ```
 sudo docker build . -t devign_docker
-sudo docker run --gpus all -it devign_docker
+sudo docker run -d --name devign --gpus all devign_docker
+sudo docker exec -it devign /bin/bash
 ```
 
 Then to run the experiment
@@ -18,5 +19,5 @@ source train_juliet.sh
 If for some reason the Dockerfile stops working(due to dependencies upgrade in the future), you can get the image from [Dockerhub](https://hub.docker.com/repository/docker/icewanee/devign-thesis-dataset). You can probably run it via
 
 ```
-sudo docker run --gpus all -it icewanee/devign-thesis-dataset:v1.0
+sudo docker run -d --gpus all -it icewanee/devign-thesis-dataset:latest
 ```
