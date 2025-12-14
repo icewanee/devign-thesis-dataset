@@ -24,4 +24,4 @@ RUN ./joern-install.sh --install-dir=/app/devign/joern --version=v1.0.170 --rein
 COPY . /app/devign/
 
 WORKDIR /app/devign
-CMD ["bash"]
+CMD ["sleep","infinity"]
